@@ -13,4 +13,4 @@ It is compatible with mobile and tablet devices with responsive design.
 
 # Short Gif
 
-![](firebase.gif)
+![](portfolio.gif)
