@@ -42,6 +42,7 @@ const Portfolio = () => {
             <img
               src="portfolio/crud.gif"
               className="grayscale contrast-100 rounded-lg h-[100%]"
+              loading="lazy"
             />
           </a>
         </SplideSlide>
@@ -54,6 +55,7 @@ const Portfolio = () => {
 
             <img
               src="portfolio/finder.gif"
+              loading="lazy"
               className="grayscale contrast-100 rounded-lg h-[100%]"
             />
           </a>
@@ -68,6 +70,7 @@ const Portfolio = () => {
             <img
               src="portfolio/number.gif"
               className="grayscale contrast-100 rounded-lg h-[100%]"
+              loading="lazy"
             />
           </a>
         </SplideSlide>
@@ -80,6 +83,7 @@ const Portfolio = () => {
             <img
               src="portfolio/shopzon.gif"
               className="grayscale contrast-100 rounded-lg h-[100%]"
+              loading="lazy"
             />
           </a>
         </SplideSlide>
@@ -92,6 +96,7 @@ const Portfolio = () => {
             <img
               src="portfolio/translate.gif"
               className="grayscale contrast-100 rounded-lg h-[100%]"
+              loading="lazy"
             />
           </a>
         </SplideSlide>
@@ -104,6 +109,7 @@ const Portfolio = () => {
             <img
               src="portfolio/youtube.gif"
               className="grayscale contrast-100 rounded-lg h-[100%]"
+              loading="lazy"
             />
           </a>
         </SplideSlide>
