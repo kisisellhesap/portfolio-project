@@ -22,6 +22,9 @@ const MainLayout = () => {
       }
     >
       <div className="max-w-[992px] m-auto max-lg:mx-4 min-h-screen  flex flex-col">
+        <p className=" p-5 text-sm text-center">
+          He is continue to run in front end path, like a turtle..
+        </p>
         <Header isDark={isDark} setIsDark={setIsDark} />
         <Outlet />
         <Footer />

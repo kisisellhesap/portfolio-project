@@ -10,13 +10,12 @@ const Header = ({ isDark, setIsDark }) => {
   };
 
   return (
-    <header className="flex py-5 gap-5 max-md:flex-col max-md:items-center">
+    <header className="flex py-5 gap-5 max-md:flex-col max-md:items-center relative">
       <div id="logo">
         <Link to="/">
           <Logo isDark={isDark} />
         </Link>
       </div>
-
       <nav className="ml-auto max-md:ml-0 flex  items-center gap-10 font-semibold text-lg justify-center">
         <NavLink to="/">About</NavLink>
         <NavLink to="portfolio">Portfolio</NavLink>

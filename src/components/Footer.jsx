@@ -10,7 +10,7 @@ const Footer = () => {
       <p className="text-[.7rem]">
         Copyright © 2025 I All rights reserved II Design by kisisellhesap
       </p>
-      <div className="flex text-2xl gap-5">
+      <div className="flex text-2xl gap-5 footer-nav">
         <a href="mailto:ahmetcannkaragoz@gmail.com">
           <MdEmail />
         </a>
