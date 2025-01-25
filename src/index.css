@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Special Elite", serif;
+}
+
+.active {
+  color: gray;
+}
+
+.logo {
+  background-image: url("/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 160px;
+  height: 160px;
+  transition: background-image 500ms ease-in-out;
+}
+
+.logo-dark {
+  background-image: url("/logo-dark.png");
+  width: 160px;
+  height: 160px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image 500ms ease-in-out;
+}
+
+.sleep-animation {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  animation-name: sleep-animation;
+  animation-duration: 2s;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+  animation-fill-mode: none;
+  transition: all 1s ease;
+}
+
+@keyframes sleep-animation {
+  0% {
+    opacity: 0;
+    transform: translate(130px, -100px);
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(160px, -70px);
+  }
+}
+
+.game-park {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-image: url("/seesaw/grass.png");
+  background-repeat: no-repeat;
+  background-size: 350px;
+  background-position: 50% 30px;
+}
+
+.game-park img {
+  position: absolute;
+  user-select: none;
+}
+
+.seesaw-animation {
+  width: 350px;
+  height: 150px;
+  transform: translate(-27px, -50px) rotate(-18deg);
+  animation-name: seesaw-animation;
+  animation-timing-function: ease-out;
+  animation-duration: 1s;
+  animation-delay: 2280ms;
+  animation-fill-mode: none;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes seesaw-animation {
+  0% {
+    transform: translate(-27px, -50px) rotate(-18deg);
+  }
+
+  100% {
+    transform: translate(-18px, -50px) rotate(2deg);
+  }
+}
+
+.brain-animation {
+  width: 55px;
+  height: 55px;
+  transform: translate(-170px, -8px) rotate(-50deg);
+  animation: brain-updown-animation 1s ease 2280ms infinite alternate,
+    brain-animation 1s ease alternate;
+}
+
+@keyframes brain-updown-animation {
+  0% {
+    transform: translate(-170px, -8px) rotate(-65deg);
+  }
+
+  100% {
+    transform: translate(-170px, -82px) rotate(-22deg);
+  }
+}
+
+@keyframes brain-animation {
+  0% {
+    transform: translate(-150px, 20px);
+  }
+
+  50% {
+    transform: translate(-170px, -40px) rotate(-50deg);
+  }
+
+  100% {
+    transform: translate(-170px, -8px) rotate(-50deg);
+  }
+}
+
+.box-animation {
+  width: 50px;
+  height: 50px;
+
+  transform: translate(115px, 10px) rotate(0deg);
+  animation: box-updown-animation 1s ease-out 2.2s infinite alternate,
+    box-animation 1s ease 1.5s alternate;
+}
+
+@keyframes box-updown-animation {
+  0% {
+    transform: translate(115px, -100px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(115px, -150px) rotate(-150deg);
+  }
+}
+
+@keyframes box-animation {
+  0% {
+    transform: translate(115px, 10px) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(115px, -130px) rotate(-80deg);
+  }
+
+  100% {
+    transform: translate(115px, -100px) rotate(0deg);
+  }
+}
+
+.page-effect {
+  animation: page-effect 600ms ease;
+}
+
+@keyframes page-effect {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
